@@ -53,6 +53,10 @@
         max-width: 55%;
        
     }
+
+    .header-contents p{
+      font-size: large;
+    }
    
     .header2-contents button{
         padding: 2vw 4vw;
