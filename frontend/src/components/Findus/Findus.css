@@ -5,13 +5,13 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  background-color: #1B4D3E;
+  background-color: white;
   border-radius: 8px;
 }
 
 .contact-info {
   text-align: center;
-  background-color: #1B4D3E;
+  background-color: white;
   padding: 20px;
   border-radius: 8px;
 }
@@ -19,18 +19,17 @@
 .contact-info h2 {
   margin-bottom: 15px;
   font-size: 26px;
-  color: rgb(254, 254, 254);
-  font-family: 'Lucida Handwriting', cursive;
+  color: darkgreen;
 }
 
 .contact-info p {
   font-size: 18px;
-  color: #a6b0b1;
+  color: #252728;
   margin: 10px 0;
 }
 
 .contact-info p strong {
-  color: white;
+  color: rgb(69, 65, 65);
 }
 
 .map-container {
@@ -41,15 +40,14 @@
 
 .map {
   flex: 2;
-  background-color: #1B4D3E;
+  background-color: white;
   padding: 15px;
   border-radius: 8px;
 }
 
 .map h2 {
   font-size: 22px;
-  color: white;
-  font-family: 'Lucida Handwriting', cursive;
+  color: darkgreen;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -74,6 +72,42 @@
 .map-image img:hover {
   transform: scale(1.05); /* Slight zoom effect on hover */
 }
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f1f18; /* Background color */
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+}
+
+.quote-icon {
+  font-size: 2.5rem;
+  color: #6b7d8b;
+  margin-bottom: 20px;
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  font-family: 'Garamond', serif;
+  max-width: 700px; /* Adjust the maximum width to control the line length */
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .quote-text {
+    font-size: 1.2rem; /* Reduce font size on smaller screens */
+    padding: 0 20px; /* Add padding to avoid text touching the edges */
+  }
+
+  .quote-icon {
+    font-size: 2rem; /* Adjust the icon size for smaller screens */
+  }
+}
+
 
 /* Responsive styles */
 @media (max-width: 768px) {
