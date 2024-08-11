@@ -80,8 +80,8 @@
     .header3-contents{
         max-width: 55%;
     }
-    .header3-contents p{
-       display: none;
+    .header-contents p{
+      font-size: large;
     }
     .header3-contents button{
         padding: 2vw 4vw;
