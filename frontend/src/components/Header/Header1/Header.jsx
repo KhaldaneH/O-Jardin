@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import './Header.css';
-import {Link} from 'react-router-dom'
 
 const Header = () => {
     useEffect(() => {
@@ -31,7 +30,7 @@ const Header = () => {
             <div className='header-contents'>
                 <h2>Bienvenue au Café O Jardin</h2>
                 <p>Choisissez parmi un menu varié comprenant une gamme délicieuse de plats préparés avec les meilleurs ingrédients et l'expertise culinaire. Nous avons également un magasin, consultez-le.</p>
-                <Link to="/menu"><button>Voir le Menu</button></Link>
+                
             </div>
         </div>
     );
