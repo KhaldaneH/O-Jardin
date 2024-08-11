@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Header from '../../components/Header/Header1/Header'
+import Header5 from '../../components/Header/Header5/Header5'
 import ExploreMenu from '../../components/ExploreMenu/ExploreMenu'
 import FoodDisplay from '../../components/FoodDisplay/FoodDisplay'
 
@@ -9,7 +9,7 @@ const Store = () => {
 
   return (
     <>
-      <Header/>
+      <Header5/>
       <ExploreMenu setCategory={setCategory} category={category}/>
       <FoodDisplay category={category}/>
       
