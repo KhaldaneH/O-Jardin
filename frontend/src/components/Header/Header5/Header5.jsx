@@ -7,7 +7,7 @@ const Header5 = () => {
     return (
         <div className='header5'>
             <div className='header5-contents'>
-                <h2 style={{fontSize:"50px",marginBottom:"30px"}}>O Jardin Store</h2>
+                <h2 style={{fontSize:"60px",marginBottom:"30px"}}>Store</h2>
                 <p style={{marginBottom:"50px",}}>Bienvenue dans notre boutique en ligne, où vos achats deviennent un plaisir simple et pratique!.</p>
                 
             </div>
