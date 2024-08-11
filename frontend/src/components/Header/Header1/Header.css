@@ -54,7 +54,7 @@
 .header-contents p{
     color: white;
     font-weight: bolder;
-    font-size: 1.2vw;
+    font-size: 1.7vw;
 }
 
 .header-contents button{
@@ -81,7 +81,7 @@
         max-width: 55%;
     }
     .header-contents p{
-      font-size: large;
+      font-size: larger;
     }
     .header-contents button{
         padding: 2vw 4vw;
