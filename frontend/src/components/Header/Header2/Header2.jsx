@@ -1,16 +1,14 @@
-import React from 'react';
 import './Header2.css';
 import {Link} from 'react-router-dom'
 
 
 const Header2 = () => {
     
-
     return (
         <div className='header2'>
-            <div className='header-contents'>
-                <h2>Bienvenue au Café O Jardin</h2>
-                <p>Choisissez parmi un menu varié comprenant une gamme délicieuse de plats préparés avec les meilleurs ingrédients et l'expertise culinaire. Nous avons également un magasin, consultez-le.</p>
+            <div className='header2-contents'>
+                <h2 style={{fontSize:"60px",marginBottom:"30px"}}>About</h2>
+                <p style={{marginBottom:"50px",}}>Nous offrons l'endroit idéal pour se détendre et se connecter avec la nature</p>
                 <Link to="/menu"><button>Voir le Menu</button></Link>
             </div>
         </div>
