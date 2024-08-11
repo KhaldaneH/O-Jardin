@@ -1,0 +1,76 @@
+/* Reset some default styles */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* General about page styles */
+.about-container, .about-section {
+  padding: 20px;
+  max-width: 1200px; /* Increased max-width for more space */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap; /* Ensure items don't wrap */
+  align-items: center;
+  justify-content: space-between; /* Distribute space evenly */
+  text-align: left;
+  gap: 20px;
+}
+
+.about-text {
+  font-size: 18px;
+  color: #333;
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-media {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two images per row */
+  grid-gap: 20px; /* Space between images */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Video styles */
+.about-video {
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 50px;
+}
+
+/* Image styles */
+.about-image {
+  width: 100%;
+  max-width: 250px; /* Smaller images */
+  border-radius: 5%;
+  height: 377px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about-container, .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-media {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-video, .about-image {
+    width: 90%;
+    max-width: none; /* Allow it to scale more freely */
+    margin-left: 15px;
+  }
+}

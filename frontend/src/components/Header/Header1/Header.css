@@ -1,0 +1,89 @@
+.header { 
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/hero-1.jpg') ;
+    border-radius: 1%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: background-image 1s ease-in-out; /* Transition for background-image */
+   
+}
+
+@keyframes zoomfade {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    45% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    55% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 22px);
+}
+
+.header-contents p{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2vw;
+}
+
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+}
+
+@media (max-width: 1050px) {
+    .header{
+        height: 500px;
+    }
+    .header-contents{
+        max-width: 45%;
+    }
+}
+
+@media(max-width: 750px){
+    .header-contents{
+        max-width: 55%;
+    }
+    .header-contents p{
+      font-size: large;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
