@@ -50,17 +50,85 @@ body, h1, p {
   border-radius: 5%;
   height: 377px;
 }
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f1f18; /* Adjust to match the background color in the image */
+  padding: 40px;
+  border-radius: 8px;
+  color: white;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+
+.hero-subtext {
+  max-width: 400px;
+  text-align: left;
+}
+
+.hero-subtext p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  background-color: #00A56E;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #008f5c;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    align-items: flex-start; /* Align text to the left */
+    padding: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem; /* Reduce font size on smaller screens */
+    text-align: center; /* Center the heading on smaller screens */
+  }
+
+  .hero-subtext {
+    max-width: 100%;
+    text-align: center; /* Center the subtext on smaller screens */
+    margin-top: 20px;
+  }
+
+  .hero-button {
+    display: block;
+    margin: 0 auto; /* Center the button on smaller screens */
+    padding: 10px 15px; /* Adjust padding for smaller screens */
+    font-size: 1rem;
+  }
+}
+
 
 /* Responsive styles */
 @media (max-width: 768px) {
   .about-container, .about-section {
     flex-direction: column;
-    text-align: center;
   }
 
-  .about-text {
-    text-align: center;
-  }
+  
 
   .about-media {
     grid-template-columns: 1fr; /* Single column on smaller screens */
@@ -73,4 +141,5 @@ body, h1, p {
     max-width: none; /* Allow it to scale more freely */
     margin-left: 15px;
   }
+  
 }
