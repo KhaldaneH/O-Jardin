@@ -53,9 +53,7 @@
         max-width: 55%;
        
     }
-    .header2-contents p{
-       display: none;
-    }
+   
     .header2-contents button{
         padding: 2vw 4vw;
     }
